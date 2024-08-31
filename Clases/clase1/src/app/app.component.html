@@ -1,0 +1,34 @@
+<!-- Vinculamos los input con las propiedades numero1 y numero2 de nuestro archivo .ts por medio de la directiva [(ngModel)]. 
+  Importar FormsModule en la propiedad imports de nuestro @Component -->
+  <input type="number" placeholder="Numero 1" [(ngModel)]=" numero1">
+  <br>
+  <input type="number" placeholder="Numero 2" [(ngModel)]=" numero2">
+  <br>
+  <!-- Capturamos el evento click del boton con () -->
+  <button (click)="sumar()">Sumar</button>
+  <br>
+  <!-- Utilizamos la interpolacion o binding {{}} para mostrar el valor de la propiedad resultado -->
+  <span class="resultado">Resultado: {{resultado}} </span>
+  <br>
+  
+  <!-- Evaluamos si resultado es mayor que 10 con la diractiva *ngIf. 
+    Importar NgIf o CommonModule en la propiedad imports de nuestro @Component -->
+  <app-mensaje *ngIf="resultado > 10"></app-mensaje>
+  
+  <!-- Evaluamos si resultado es mayor que 10 con la sintaxis @if -->
+  @if (resultado > 10) {
+    <app-mensaje></app-mensaje>
+  }
+  
+  <h2>Iteraciones</h2>
+  
+  <!-- Iteramos nuestro array de items con la directiva *ngfor. 
+    Importar NgFor o CommonModule en la propiedad imports de nuestro @Component -->
+  <p *ngFor="let item of items">
+    {{item}}
+  </p>
+  
+  <!-- Iteramos nuestro array de items con la sintaxis @for -->
+  @for (item of items; track $index) {
+    <p>{{item}}</p>
+  }
