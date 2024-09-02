@@ -1,0 +1,14 @@
+<section>
+    @if (isLogged) {
+        <p>Bienvenido {{ nombre }}</p>
+        <button (click)="loggout()">Cerrar sesion</button>
+    } @else {
+        <p>Iniciar sesion</p>
+        <!-- Generar formulario de login -->
+        <input type="email" [(ngModel)]="inp_email" placeholder="Ingrese su correo">
+        <input type="password" [(ngModel)]="inp_password" placeholder="Ingrese su contraseña">
+        <button (click)="loggin()">Iniciar sesion</button>
+    }
+</section>
+
+
