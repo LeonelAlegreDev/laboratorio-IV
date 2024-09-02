@@ -1,11 +1,15 @@
 # Angular Basics
 
+## Instalar Angular
+```bash
+npm i -g @angular/cli
+```
+
 ## Crear aplicacion
 ```bash
 ng new nombre-de-tu-aplicacion
-ng new nombre-de-tu-aplicacion --prefix=mi-prefix
 ng new nombre-de-tu-aplicacion --skip-tests
-ng new nombre-de-tu-aplicacion --style=scss
+ng new nombre-de-tu-aplicacion --style=
 ng new nombre-de-tu-aplicacion --directory=mi-directorio
 ```
 
