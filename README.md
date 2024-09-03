@@ -7,10 +7,12 @@ npm i -g @angular/cli
 
 ## Crear aplicacion
 ```bash
-ng new nombre-de-tu-aplicacion
-ng new nombre-de-tu-aplicacion --skip-tests
-ng new nombre-de-tu-aplicacion --style=
-ng new nombre-de-tu-aplicacion --directory=mi-directorio
+ng new app
+ng new app --skip-tests
+ng new app --style=css
+ng new app --directory=mi-directorio
+ng new app --ssr=false
+ng new app --directory=my-app --style=css --ssr=false --skip-tests
 ```
 
 ## Ejecutar Servicio
