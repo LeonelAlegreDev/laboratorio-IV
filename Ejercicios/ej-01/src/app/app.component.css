@@ -1,0 +1,30 @@
+.ejercicio{
+    padding:10px 15px;
+}
+h2{
+    color: rgb(177, 177, 177); 
+    font-size: 30px;
+    font-style: bold;
+}
+li{
+    font-size: 22px;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+label{
+    font-size: 20px;
+    margin-right: 20px;
+    min-width: 100px;
+}
+
+.form-group button{
+    margin-right: 20px;
+}
+.split-separator{
+    display: flex;
+    flex-direction: row;
+}
+.split-separator div{
+    margin-right: 20px;
+}
