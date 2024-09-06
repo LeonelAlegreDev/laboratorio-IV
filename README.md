@@ -30,3 +30,9 @@ ng serve --disable-host-check
 ng generate component nombre-del-componente
 ng generate component componentes/nombre-del-componente
 ```
+
+# Clase 2
+## Desplegar aplicacion con firebase
+```bash
+firebase deploy --only hosting
+```
